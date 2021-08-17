@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Primary-color-1: hsl(225, 100%, 94%); /*Pale blue*/
+    --Primary-color-2: hsl(245, 75%, 52%);  /*Bright blue*/
+
+    --Neutral-color-1: hsl(225, 100%, 98%); /*Very pale blue*/
+    --Neutral-color-2: hsl(224, 23%, 55%);  /*Desaturated blue*/
+    --Neutral-color-3: hsl(223, 47%, 23%);  /*Dark blue*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--Neutral-color-2);
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    background-color: var(--Primary-color-1);
+}
+
+.order-summary-box{
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 420px;
+    height: 650px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.order-summary-box img {
+    width: 100%;
+    display: inline-block;
+}
+
+.order-summary-box h2 {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 170%;
+    color: var(--Neutral-color-3);
+}
+
+.order-summary-box p {
+    width: 80%;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.plan {
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px;
+    background-color: var(--Neutral-color-1);
+    border-radius: 15px;
+}
+
+.plan img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 45px;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.plan div {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    align-self: center;
+}
+
+.plan div h3 {
+    font-size: 110%;
+    color: var(--Neutral-color-3);
+}
+
+.plan div p {
+    margin: 0;
+    text-align: left;
+}
+
+.plan a {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    align-self: center;
+    color: var(--Primary-color-2);
+    font-size: 90%;
+}
+
+.attribution {
+    font-size: 0.6rem;
+    text-align: center;
+    position: absolute;
+    transform: translate(50%, -50%);
+    bottom: 0;
+    right: 50%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
