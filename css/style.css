@@ -38,10 +38,11 @@ body {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 420px;
+    width: 400px;
     height: 650px;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 5px 25px 1px var(--Neutral-color-2);
 }
 
 .order-summary-box img {
@@ -105,6 +106,32 @@ body {
     align-self: center;
     color: var(--Primary-color-2);
     font-size: 90%;
+}
+
+.btn,
+.cancel {
+    display: block;
+    font-size: 110%;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn {
+    color: #fff;
+    margin: 40px 10% 0 10%;
+    border-radius: 10px;
+    background-color: var(--Primary-color-2);
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 5px 15px var(--Neutral-color-2);
+}
+
+.cancel {
+    color: var(--Neutral-color-2);
+    margin: 10px 10% 0 10%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 0;
 }
 
 .attribution {
