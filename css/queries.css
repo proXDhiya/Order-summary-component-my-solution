@@ -1,0 +1,18 @@
+@media only screen and (max-width: 375px){
+    body { font-size: 0.9rem; }
+
+    .order-summary-box {
+        width: 330px;
+        height: 560px;
+    }
+
+    .order-summary-box img { height: 150px; }
+
+    .plan img { height: 45px;}
+
+    .btn:visited,
+    .btn:link { margin-top: 10px; }
+
+    .cancel:visited,
+    .cancel:link { margin-top: 10px; }
+}
