@@ -100,12 +100,20 @@ body {
     text-align: left;
 }
 
-.plan a {
+.plan a:link,
+.plan a:visited {
+    text-decoration: none;
     grid-column-start: 4;
     grid-column-end: 5;
     align-self: center;
     color: var(--Primary-color-2);
     font-size: 90%;
+    transition: color .5s;
+}
+
+.plan a:hover,
+.plan a:active {
+    color: var(--Neutral-color-2);
 }
 
 .btn,
@@ -116,22 +124,37 @@ body {
     text-decoration: none;
 }
 
-.btn {
+.btn:link,
+.btn:visited {
     color: #fff;
     margin: 40px 10% 0 10%;
     border-radius: 10px;
     background-color: var(--Primary-color-2);
     text-align: center;
     padding: 15px 0;
-    box-shadow: 0 5px 15px var(--Neutral-color-2);
+    box-shadow: 0 2px 5px var(--Neutral-color-2);
+    transition: background .4s, box-shadow .4s;
 }
 
-.cancel {
+.btn:active,
+.btn:hover {
+    box-shadow: 0 3px 10px var(--Neutral-color-2);
+    background-color: hsl(244, 64%, 71%);
+}
+
+.cancel:link,
+.cancel:visited {
     color: var(--Neutral-color-2);
     margin: 10px 10% 0 10%;
     border-radius: 10px;
     text-align: center;
     padding: 15px 0;
+    transition: color .4s;
+}
+
+.cancel:active,
+.cancel:hover {
+    color: var(--Neutral-color-3);
 }
 
 .attribution {
